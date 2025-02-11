@@ -32,11 +32,9 @@ int main() {
       if (!on_off_R) {
         on_off_R = 1;
         gpio_put(LED_PIN_R, on_off_R);
-        sleep_ms(250);
       } else {
         on_off_R = 0;
         gpio_put(LED_PIN_R, on_off_R);
-        sleep_ms(250);
       }
       while (!gpio_get(BTN_PIN_R)) {
       };
@@ -46,11 +44,9 @@ int main() {
       if (!on_off_G) {
         on_off_G = 1;
         gpio_put(LED_PIN_G, on_off_G);
-        sleep_ms(250);
       } else {
         on_off_G = 0;
         gpio_put(LED_PIN_G, on_off_G);
-        sleep_ms(250);
       }
       while (!gpio_get(BTN_PIN_G)) {
       };
